@@ -8,7 +8,7 @@ for d, _, files in os.walk('libs/lib'):
             continue
         ctypes.cdll.LoadLibrary(os.path.join(d, f))
 
-#from libs import sklearn
+import sklearn
 
 def hello(event, context):
     body = {
